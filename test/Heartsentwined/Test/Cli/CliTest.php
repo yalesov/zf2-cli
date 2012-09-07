@@ -70,7 +70,7 @@ class CliTest extends \PHPUnit_Framework_TestCase
             'baz' => array(
                 'template'  => '# %s #',
             ),
-            'quz' => array(
+            'qux' => array(
             )),
             $this->cli->getTemplates());
     }
