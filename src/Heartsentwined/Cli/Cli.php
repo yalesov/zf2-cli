@@ -106,17 +106,17 @@ class Cli
 
         if (!$echo) ob_start();
 
-        if (!$console = $this->getConsole()) $this->initConsole();
+        if (!$this->getConsole()) $this->initConsole();
 
-        if ($console = $this->getConsole()
-            && isset($template['color'])
+        $console = $this->getConsole();
+        if ($console && isset($template['color'])
             && defined("Zend\Console\ColorInterface::{$template['color']}")) {
             $console->setColor(
                 constant("Zend\Console\ColorInterface::{$template['color']}"));
         }
 
         if (isset($template['template'])) {
-            printf("\n$template\n", $text);
+            printf("\n{$template['template']}\n", $text);
         } else {
             echo "\n$text\n";
         }
