@@ -74,4 +74,10 @@ class CliTest extends \PHPUnit_Framework_TestCase
             )),
             $this->cli->getTemplates());
     }
+
+    public function testInitConsole()
+    {
+        $this->cli->initConsole();
+        $this->assertNotEmpty($this->cli->getConsole());
+    }
 }
