@@ -8,6 +8,8 @@ return array(
             'cli' => array(
                 'parameters' => array(
                     'templates' => array (
+                        // examples for template injection
+                        /*
                         'section' => array(
                             'template'  => '## %s ##',
                             'color'     => 'YELLOW',
@@ -20,6 +22,7 @@ return array(
                             'template'  => '[ %s ]',
                             'color'     => 'GREEN',
                         ),
+                        */
                     ),
                 ),
             ),
