@@ -41,16 +41,16 @@ Often you need to display similarly-formatted text in a CLI app, e.g. section ti
 
 ### Setup templates
 
-Add a template named `foo`, which outputs a blue string `## %s ##` (`%s` replaced by actual text).
+Add a template named `section`, which outputs a blue string `## %s ##` (`%s` replaced by actual text).
 
 ```php
-$cli->addTemplate('foo', array(
+$cli->addTemplate('section', array(
     'template'  => '## %s ##',
     'color'     => 'BLUE',
 ));
 ```
 
-- `template`: (optional), `%s` as text placeholder; not set = `%s` (plain text)
+- `template`: (optional), `%s` as text placeholder; not set = `'%s'` (plain text)
 - `color`: (optional), a `\Zend\Console\ColorInterface` defined constant name; not set = default / normal color
 
 You can also inject templates through the config file:
