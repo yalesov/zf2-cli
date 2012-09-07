@@ -3,6 +3,7 @@ namespace Heartsentwined\Cli;
 
 use Heartsentwined\ArgValidator\ArgValidator;
 use Zend\Console\Console;
+use Zend\Console\Adapter\AdapterInterface;
 
 class Cli
 {
@@ -15,7 +16,7 @@ class Cli
      * @param Console $console
      * @return $this
      */
-    public function setConsole(Console $console)
+    public function setConsole(AdapterInterface $console)
     {
         $this->console = $console;
         return $this;
