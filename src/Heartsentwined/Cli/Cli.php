@@ -14,7 +14,7 @@ class Cli
      * setConsole
      *
      * @param Console $console
-     * @return $this
+     * @return self
      */
     public function setConsole(AdapterInterface $console)
     {
@@ -38,7 +38,7 @@ class Cli
      * @param array $templates
      *  (code) => $template
      * @see self::addTemplate()
-     * @return $this
+     * @return self
      */
     public function setTemplates(array $templates)
     {
@@ -69,7 +69,7 @@ class Cli
      *  'color'     => string (optional)
      *      a \Zend\Console\ColorInterface defined constant name,
      *      not set = default / normal color
-     * @return $this
+     * @return self
      */
     public function addTemplate($code, array $template)
     {
@@ -128,7 +128,7 @@ class Cli
     /**
      * try to initiate console instance if not set
      *
-     * @return $this
+     * @return self
      */
     public function initConsole()
     {
