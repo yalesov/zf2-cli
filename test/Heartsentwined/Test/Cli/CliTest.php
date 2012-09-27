@@ -2,7 +2,6 @@
 namespace Heartsentwined\Test\Cli;
 
 use Heartsentwined\Cli\Cli;
-use Heartsentwined\Cli\Exception;
 
 class CliTest extends \PHPUnit_Framework_TestCase
 {

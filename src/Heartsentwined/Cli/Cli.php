@@ -13,12 +13,13 @@ class Cli
     /**
      * setConsole
      *
-     * @param Console $console
+     * @param  Console $console
      * @return self
      */
     public function setConsole(AdapterInterface $console)
     {
         $this->console = $console;
+
         return $this;
     }
 
@@ -45,6 +46,7 @@ class Cli
         foreach ($templates as $code => $template) {
             $this->addTemplate($code, $template);
         }
+
         return $this;
     }
 
@@ -61,8 +63,8 @@ class Cli
     /**
      * register a template
      *
-     * @param string $code the template identifier / code
-     * @param array $template
+     * @param string $code     the template identifier / code
+     * @param array  $template
      *  'template'  => string (optional)
      *      %s as text placeholder,
      *      not set = '%s' (plain text)
@@ -79,15 +81,16 @@ class Cli
             'color'     => array('string', 'notSet'),
         ));
         $this->templates[$code] = $template;
+
         return $this;
     }
 
     /**
      * output text with template
      *
-     * @param string $text
-     * @param string $code the template code
-     * @param bool $echo = true, if false, will return print string instead
+     * @param  string      $text
+     * @param  string      $code the template code
+     * @param  bool        $echo = true, if false, will return print string instead
      * @return void|string
      */
     public function write($text, $code, $echo = true)
