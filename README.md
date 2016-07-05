@@ -1,6 +1,6 @@
 # zf2-cli
 
-[![Build Status](https://secure.travis-ci.org/yalesov/zf2-cli.png)](http://travis-ci.org/yalesov/zf2-cli)
+[![Build Status](https://travis-ci.org/yalesov/zf2-cli.svg)](https://travis-ci.org/yalesov/zf2-cli)
 
 helper functions for building a zf2 CLI app
 
