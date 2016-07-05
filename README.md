@@ -11,7 +11,7 @@ helper functions for building a zf2 CLI app
 ```json
 {
     "require": {
-        "yalesov/zf2-cli": "1.*"
+        "yalesov/zf2-cli": "2.*"
     }
 }
 ```
