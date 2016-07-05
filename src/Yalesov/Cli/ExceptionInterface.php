@@ -1,5 +1,5 @@
 <?php
-namespace Heartsentwined\Cli;
+namespace Yalesov\Cli;
 
 interface ExceptionInterface
 {

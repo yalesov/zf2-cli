@@ -1,6 +1,6 @@
 # zf2-cli
 
-[![Build Status](https://secure.travis-ci.org/heartsentwined/zf2-cli.png)](http://travis-ci.org/heartsentwined/zf2-cli)
+[![Build Status](https://secure.travis-ci.org/yalesov/zf2-cli.png)](http://travis-ci.org/yalesov/zf2-cli)
 
 helper functions for building a zf2 CLI app
 
@@ -11,7 +11,7 @@ helper functions for building a zf2 CLI app
 ```json
 {
     "require": {
-        "heartsentwined/zf2-cli": "1.*"
+        "yalesov/zf2-cli": "1.*"
     }
 }
 ```
@@ -26,13 +26,13 @@ Use service locator.
 
 ```php
 $cli = $locator->get('cli');
-$cli = $locator->get('Heartsentwined\Cli\Cli');
+$cli = $locator->get('Yalesov\Cli\Cli');
 ```
 
 Or just instantiate one manually.
 
 ```php
-$cli = new \Heartsentwined\Cli\Cli;
+$cli = new \Yalesov\Cli\Cli;
 ```
 
 ## Templated-text
@@ -60,7 +60,7 @@ return array(
     'di' => array(
         'instance' => array(
             'alias' => array(
-                'cli' => 'Heartsentwined\Cli\Cli',
+                'cli' => 'Yalesov\Cli\Cli',
             ),
             'cli' => array(
                 'parameters' => array(

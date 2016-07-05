@@ -3,7 +3,7 @@ return array(
     'di' => array(
         'instance' => array(
             'alias' => array(
-                'cli' => 'Heartsentwined\Cli\Cli',
+                'cli' => 'Yalesov\Cli\Cli',
             ),
             'cli' => array(
                 'parameters' => array(

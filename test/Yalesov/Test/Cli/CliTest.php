@@ -1,7 +1,7 @@
 <?php
-namespace Heartsentwined\Test\Cli;
+namespace Yalesov\Test\Cli;
 
-use Heartsentwined\Cli\Cli;
+use Yalesov\Cli\Cli;
 
 class CliTest extends \PHPUnit_Framework_TestCase
 {

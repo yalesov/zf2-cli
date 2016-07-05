@@ -1,7 +1,7 @@
 <?php
-namespace Heartsentwined\Cli;
+namespace Yalesov\Cli;
 
-use Heartsentwined\ArgValidator\ArgValidator;
+use Yalesov\ArgValidator\ArgValidator;
 use Zend\Console\Console;
 use Zend\Console\Adapter\AdapterInterface;
 

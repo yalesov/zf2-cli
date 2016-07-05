@@ -1,7 +1,7 @@
 <?php
-namespace Heartsentwined\Cli\Exception;
+namespace Yalesov\Cli\Exception;
 
-use Heartsentwined\Cli\ExceptionInterface;
+use Yalesov\Cli\ExceptionInterface;
 
 class InvalidArgumentException
     extends \InvalidArgumentException
