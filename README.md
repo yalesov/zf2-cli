@@ -10,9 +10,9 @@ helper functions for building a zf2 CLI app
 
 ```json
 {
-    "require": {
-        "yalesov/zf2-cli": "2.*"
-    }
+  "require": {
+    "yalesov/zf2-cli": "2.*"
+  }
 }
 ```
 
@@ -45,8 +45,8 @@ Add a template named `section`, which outputs a blue string `## %s ##` (`%s` rep
 
 ```php
 $cli->addTemplate('section', array(
-    'template'  => '## %s ##',
-    'color'     => 'BLUE',
+  'template' => '## %s ##',
+  'color'    => 'BLUE',
 ));
 ```
 
@@ -57,31 +57,31 @@ You can also inject templates through the config file:
 
 ```php
 return array(
-    'di' => array(
-        'instance' => array(
-            'alias' => array(
-                'cli' => 'Yalesov\Cli\Cli',
+  'di' => array(
+    'instance' => array(
+      'alias' => array(
+        'cli' => 'Yalesov\Cli\Cli',
+      ),
+      'cli' => array(
+        'parameters' => array(
+          'templates' => array (
+            'section' => array(
+              'template' => '## %s ##',
+              'color'    => 'YELLOW',
             ),
-            'cli' => array(
-                'parameters' => array(
-                    'templates' => array (
-                        'section' => array(
-                            'template'  => '## %s ##',
-                            'color'     => 'YELLOW',
-                        ),
-                        'task' => array (
-                            'template'  => '- %s -',
-                            'color'     => 'BLUE',
-                        ),
-                        'module' => array(
-                            'template'  => '[ %s ]',
-                            'color'     => 'GREEN',
-                        ),
-                    ),
-                ),
+            'task' => array (
+              'template' => '- %s -',
+              'color'    => 'BLUE',
             ),
+            'module' => array(
+              'template' => '[ %s ]',
+              'color'    => 'GREEN',
+            ),
+          ),
         ),
+      ),
     ),
+  ),
 );
 ```
 
