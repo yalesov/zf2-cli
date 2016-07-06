@@ -1,31 +1,31 @@
 <?php
 return array(
-    'di' => array(
-        'instance' => array(
-            'alias' => array(
-                'cli' => 'Yalesov\Cli\Cli',
+  'di' => array(
+    'instance' => array(
+      'alias' => array(
+        'cli' => 'Yalesov\Cli\Cli',
+      ),
+      'cli' => array(
+        'parameters' => array(
+          'templates' => array (
+            // examples for template injection
+            /*
+            'section' => array(
+              'template'  => '## %s ##',
+              'color'   => 'YELLOW',
             ),
-            'cli' => array(
-                'parameters' => array(
-                    'templates' => array (
-                        // examples for template injection
-                        /*
-                        'section' => array(
-                            'template'  => '## %s ##',
-                            'color'     => 'YELLOW',
-                        ),
-                        'task' => array (
-                            'template'  => '- %s -',
-                            'color'     => 'BLUE',
-                        ),
-                        'module' => array(
-                            'template'  => '[ %s ]',
-                            'color'     => 'GREEN',
-                        ),
-                        */
-                    ),
-                ),
+            'task' => array (
+              'template'  => '- %s -',
+              'color'   => 'BLUE',
             ),
+            'module' => array(
+              'template'  => '[ %s ]',
+              'color'   => 'GREEN',
+            ),
+            */
+          ),
         ),
+      ),
     ),
+  ),
 );

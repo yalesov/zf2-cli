@@ -1,35 +1,35 @@
 {
-    "name": "yalesov/zf2-cli",
-    "description": "helper functions for building a zf2 CLI app",
-    "keywords": ["cli", "zf2", "helper"],
-    "authors": [
-        {
-            "name": "Yulij Andreevich Lesov",
-            "email": "yalesov@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.3",
-        "yalesov/arg-validator": "2.*",
-        "zendframework/zend-console": "2.*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Yalesov\\Cli": "src/"
-        }
-    },
-    "license": "ISC",
-    "homepage": "https://github.com/yalesov/zf2-cli",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/yalesov/zf2-cli"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/yalesov/zf2-cli/issues"
+  "name": "yalesov/zf2-cli",
+  "description": "helper functions for building a zf2 CLI app",
+  "keywords": ["cli", "zf2", "helper"],
+  "authors": [
+    {
+      "name": "Yulij Andreevich Lesov",
+      "email": "yalesov@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "yalesov/arg-validator": "2.*",
+    "zendframework/zend-console": "2.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Yalesov\\Cli": "src/"
+    }
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/yalesov/zf2-cli",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/yalesov/zf2-cli"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/yalesov/zf2-cli/issues"
+  }
 }
